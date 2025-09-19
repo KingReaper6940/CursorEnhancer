@@ -3,7 +3,7 @@
   "displayName": "Cursor Prompt Enhancer",
   "description": "Enhance natural language prompts before sending them to AI for better code generation",
   "version": "0.0.1",
-  "publisher": "your-publisher-id",
+  "publisher": "vrishnviswa",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -62,15 +62,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/cursor-enhancer.git"
+    "url": "https://github.com/KingReaper6940/CursorEnhancer.git"
   },
   "license": "UNLICENSED",
   "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+    "name": "Vrishn Viswa Sathyamoorthy",
+    "email": "vrishnviswa.sathyamoorthy@gmail.com"
   },
-  "homepage": "https://github.com/yourusername/cursor-enhancer#readme",
+  "homepage": "https://github.com/KingReaper6940/CursorEnhancer#readme",
   "bugs": {
-    "url": "https://github.com/yourusername/cursor-enhancer/issues"
+    "url": "https://github.com/KingReaper6940/CursorEnhancer/issues"
   }
 }

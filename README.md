@@ -26,7 +26,7 @@ A VS Code extension (also works in Cursor Desktop) that improves natural languag
 First, clone this repository and set up the backend server:
 
 ```bash
-git clone https://github.com/yourusername/cursor-enhancer.git
+git clone https://github.com/KingReaper6940/CursorEnhancer.git
 cd cursor-enhancer/backend
 npm install
 ```
@@ -310,13 +310,13 @@ This extension is published on the **VS Code Marketplace** and can be installed 
 4. Click **Install**
 
 ### **Marketplace Link**
-🔗 **[Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=your-publisher-id.cursor-prompt-enhancer)**
+🔗 **[Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=vrishnviswa.cursor-prompt-enhancer)**
 
 ### **Publishing Information**
-- **Publisher:** [Your Publisher Name]
+- **Publisher:** Vrishn Viswa Sathyamoorthy
 - **Version:** 0.0.1
 - **License:** Proprietary (Personal Use Only)
-- **Last Updated:** [Current Date]
+- **Last Updated:** September 19, 2024
 
 ---
 
@@ -337,9 +337,9 @@ This project is licensed under a **Proprietary License** - Personal Use Only.
 - **Public display** - Use in public demonstrations or performances
 
 ### 🔒 **Copyright Notice**
-Copyright (c) 2024 [Your Name]. All rights reserved.
+Copyright (c) 2024 Vrishn Viswa Sathyamoorthy. All rights reserved.
 
-**For licensing inquiries, contact:** [your.email@example.com]
+**For licensing inquiries, contact:** vrishnviswa.sathyamoorthy@gmail.com
 
 **Full license text:** See [LICENSE](LICENSE) file in this repository.
 
@@ -350,7 +350,7 @@ Copyright (c) 2024 [Your Name]. All rights reserved.
 This is a proprietary project with limited contribution opportunities due to licensing restrictions.
 
 ### Bug Reports
-- Use the [GitHub Issues](https://github.com/yourusername/cursor-enhancer/issues) page
+- Use the [GitHub Issues](https://github.com/KingReaper6940/CursorEnhancer/issues) page
 - Include steps to reproduce, expected vs actual behavior
 - Add relevant logs and system information
 
@@ -388,7 +388,7 @@ Due to the proprietary license, external contributions are not accepted. All dev
 
 ## 👥 Maintainers
 
-- **[Your Name]** ([@yourusername](https://github.com/yourusername)) - Creator & Maintainer
+- **Vrishn Viswa Sathyamoorthy** ([@KingReaper6940](https://github.com/KingReaper6940)) - Creator & Maintainer
 
 ---
 
@@ -403,10 +403,10 @@ Due to the proprietary license, external contributions are not accepted. All dev
 
 ## 📞 Support
 
-- 📧 **Email:** [your.email@example.com]
-- 🐛 **Issues:** [GitHub Issues](https://github.com/yourusername/cursor-enhancer/issues)
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/yourusername/cursor-enhancer/discussions)
-- 📖 **Documentation:** [Wiki](https://github.com/yourusername/cursor-enhancer/wiki)
+- 📧 **Email:** vrishnviswa.sathyamoorthy@gmail.com
+- 🐛 **Issues:** [GitHub Issues](https://github.com/KingReaper6940/CursorEnhancer/issues)
+- 💬 **Discussions:** [GitHub Discussions](https://github.com/KingReaper6940/CursorEnhancer/discussions)
+- 📖 **Documentation:** [Wiki](https://github.com/KingReaper6940/CursorEnhancer/wiki)
 
 ---
 
@@ -414,6 +414,6 @@ Due to the proprietary license, external contributions are not accepted. All dev
 
 **Made with ❤️ for the developer community**
 
-[⭐ Star on GitHub](https://github.com/yourusername/cursor-enhancer) • [🐛 Report Bug](https://github.com/yourusername/cursor-enhancer/issues) • [💡 Request Feature](https://github.com/yourusername/cursor-enhancer/issues)
+[⭐ Star on GitHub](https://github.com/KingReaper6940/CursorEnhancer) • [🐛 Report Bug](https://github.com/KingReaper6940/CursorEnhancer/issues) • [💡 Request Feature](https://github.com/KingReaper6940/CursorEnhancer/issues)
 
 </div>

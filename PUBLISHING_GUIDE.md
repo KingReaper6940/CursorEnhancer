@@ -9,18 +9,18 @@
 4. Choose a unique **Publisher ID** (this will be your namespace)
 5. Fill in your details and create the account
 
-### **Step 2: Update Extension Details**
-Before publishing, update these files with your information:
+### **Step 2: Extension Details (Already Updated)**
+The extension files have been updated with your information:
 
 #### **package.json**
-- Replace `"your-publisher-id"` with your actual publisher ID
-- Replace `"Your Name"` with your real name
-- Replace `"your.email@example.com"` with your email
-- Replace `"yourusername"` with your GitHub username
+- Publisher ID: `vrishnviswa`
+- Author: `Vrishn Viswa Sathyamoorthy`
+- Email: `vrishnviswa.sathyamoorthy@gmail.com`
+- Repository: `https://github.com/KingReaper6940/CursorEnhancer.git`
 
 #### **LICENSE**
-- Replace `[Your Name]` with your actual name
-- Replace `[your.email@example.com]` with your contact email
+- Copyright: `Vrishn Viswa Sathyamoorthy`
+- Contact: `vrishnviswa.sathyamoorthy@gmail.com`
 
 ### **Step 3: Install vsce (VS Code Extension Manager)**
 ```bash
@@ -29,7 +29,7 @@ npm install -g @vscode/vsce
 
 ### **Step 4: Login to Marketplace**
 ```bash
-vsce login [your-publisher-id]
+vsce login vrishnviswa
 ```
 This will open a browser window for authentication.
 
@@ -76,11 +76,11 @@ Your extension now has:
 ## 🎉 **After Publishing**
 
 Your extension will be available at:
-`https://marketplace.visualstudio.com/items?itemName=[your-publisher-id].cursor-prompt-enhancer`
+`https://marketplace.visualstudio.com/items?itemName=vrishnviswa.cursor-prompt-enhancer`
 
 Users can install it with:
 ```bash
-code --install-extension [your-publisher-id].cursor-prompt-enhancer
+code --install-extension vrishnviswa.cursor-prompt-enhancer
 ```
 
 ## 📞 **Support**
