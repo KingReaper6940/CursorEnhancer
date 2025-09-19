@@ -13,7 +13,7 @@
 The extension files have been updated with your information:
 
 #### **package.json**
-- Publisher ID: `vrishnviswa`
+- Publisher ID: `VrishnViswaSathyamoorthy`
 - Author: `Vrishn Viswa Sathyamoorthy`
 - Email: `vrishnviswa.sathyamoorthy@gmail.com`
 - Repository: `https://github.com/KingReaper6940/CursorEnhancer.git`
@@ -29,7 +29,7 @@ npm install -g @vscode/vsce
 
 ### **Step 4: Login to Marketplace**
 ```bash
-vsce login vrishnviswa
+vsce login VrishnViswaSathyamoorthy
 ```
 This will open a browser window for authentication.
 
@@ -76,11 +76,11 @@ Your extension now has:
 ## 🎉 **After Publishing**
 
 Your extension will be available at:
-`https://marketplace.visualstudio.com/items?itemName=vrishnviswa.cursor-prompt-enhancer`
+`https://marketplace.visualstudio.com/items?itemName=VrishnViswaSathyamoorthy.cursor-prompt-enhancer`
 
 Users can install it with:
 ```bash
-code --install-extension vrishnviswa.cursor-prompt-enhancer
+code --install-extension VrishnViswaSathyamoorthy.cursor-prompt-enhancer
 ```
 
 ## 📞 **Support**

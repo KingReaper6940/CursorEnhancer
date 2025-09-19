@@ -310,7 +310,7 @@ This extension is published on the **VS Code Marketplace** and can be installed 
 4. Click **Install**
 
 ### **Marketplace Link**
-🔗 **[Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=vrishnviswa.cursor-prompt-enhancer)**
+🔗 **[Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VrishnViswaSathyamoorthy.cursor-prompt-enhancer)**
 
 ### **Publishing Information**
 - **Publisher:** Vrishn Viswa Sathyamoorthy

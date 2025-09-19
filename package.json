@@ -3,7 +3,7 @@
   "displayName": "Cursor Prompt Enhancer",
   "description": "Enhance natural language prompts before sending them to AI for better code generation",
   "version": "0.0.1",
-  "publisher": "vrishnviswa",
+  "publisher": "VrishnViswaSathyamoorthy",
   "engines": {
     "vscode": "^1.70.0"
   },
