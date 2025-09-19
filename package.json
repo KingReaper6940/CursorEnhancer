@@ -24,16 +24,60 @@
     "commands": [
       {
         "command": "cursorEnhancer.enhancePrompt",
-        "title": "Cursor Enhancer: Enhance Prompt"
+        "title": "✨ Enhance Prompt",
+        "icon": "$(sparkle)"
+      },
+      {
+        "command": "cursorEnhancer.enhanceSelection",
+        "title": "✨ Enhance Selected Text",
+        "icon": "$(sparkle)"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "cursorEnhancer.enhanceSelection",
+          "when": "editorHasSelection",
+          "group": "1_modification@1"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "cursorEnhancer.enhancePrompt",
+          "when": "editorIsOpen",
+          "group": "navigation@1"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "cursorEnhancer.enhancePrompt",
+        "key": "ctrl+shift+e",
+        "mac": "cmd+shift+e",
+        "when": "editorTextFocus"
       }
     ],
     "configuration": {
       "title": "Cursor Prompt Enhancer",
       "properties": {
-        "cursorEnhancer.apiUrl": {
+        "cursorEnhancer.openaiApiKey": {
           "type": "string",
-          "default": "http://localhost:3000/api/enhance",
-          "description": "Backend API endpoint for prompt enhancement"
+          "default": "",
+          "description": "Your OpenAI API key for prompt enhancement",
+          "markdownDescription": "Enter your OpenAI API key. Get one at [OpenAI Platform](https://platform.openai.com/api-keys)"
+        },
+        "cursorEnhancer.model": {
+          "type": "string",
+          "default": "gpt-4o-mini",
+          "enum": ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"],
+          "description": "OpenAI model to use for enhancement"
+        },
+        "cursorEnhancer.maxTokens": {
+          "type": "number",
+          "default": 1000,
+          "minimum": 100,
+          "maximum": 4000,
+          "description": "Maximum tokens for enhanced prompt"
         }
       }
     }
