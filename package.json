@@ -1,0 +1,76 @@
+{
+  "name": "cursor-prompt-enhancer",
+  "displayName": "Cursor Prompt Enhancer",
+  "description": "Enhance natural language prompts before sending them to AI for better code generation",
+  "version": "0.0.1",
+  "publisher": "your-publisher-id",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other",
+    "Machine Learning"
+  ],
+  "keywords": [
+    "cursor",
+    "ai",
+    "prompt",
+    "enhancement",
+    "gpt"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursorEnhancer.enhancePrompt",
+        "title": "Cursor Enhancer: Enhance Prompt"
+      }
+    ],
+    "configuration": {
+      "title": "Cursor Prompt Enhancer",
+      "properties": {
+        "cursorEnhancer.apiUrl": {
+          "type": "string",
+          "default": "http://localhost:3000/api/enhance",
+          "description": "Backend API endpoint for prompt enhancement"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.70.0",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.20.0",
+    "typescript": "^4.7.4",
+    "@vscode/vsce": "^2.15.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "@types/node-fetch": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cursor-enhancer.git"
+  },
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "homepage": "https://github.com/yourusername/cursor-enhancer#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/cursor-enhancer/issues"
+  }
+}

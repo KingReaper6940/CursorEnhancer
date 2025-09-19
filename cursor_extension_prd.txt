@@ -1,0 +1,151 @@
+# 📄 Product Requirements Document (PRD) — Cursor Prompt Enhancer Extension
+
+## 1. Overview
+The **Cursor Prompt Enhancer** is a VS Code extension designed to run seamlessly inside both **Cursor Desktop** (Electron app) and **VS Code**.  
+It enhances user-entered natural language prompts before they are sent to Cursor AI, making them clearer, more detailed, and structured, thereby improving the quality of AI-generated code or responses.  
+
+The extension will:
+- Let users highlight a messy or short prompt and enhance it.  
+- Provide a Command Palette action (**“Enhance Prompt”**).  
+- Replace the selection with an enhanced version or open a new tab with it.  
+- Route enhancement through a simple backend API (`/api/enhance`) that calls an LLM (e.g., OpenAI GPT-4o-mini).  
+
+## 2. Goals
+- Improve user prompts automatically.  
+- Simple, lightweight extension installable in Cursor and VS Code.  
+- Provide open-source code with a **“personal use only, no commercial use/resale” license**.  
+- Easy setup (local backend + extension).  
+
+## 3. Key Features
+1. **Command Palette Command:**  
+   - `Cursor Enhancer: Enhance Prompt`  
+   - Works on selected text OR opens an input box if nothing selected.  
+
+2. **Backend Integration:**  
+   - Configurable API endpoint (default: `http://localhost:3000/api/enhance`).  
+
+3. **Enhancement Logic:**  
+   - Adds clarity, context (language/framework), expected outputs.  
+   - Outputs enhanced prompt in JSON from backend, parses `enhanced_prompt`.  
+
+4. **User Options:**  
+   - Choose whether to **Replace Selection** or **Open New Doc**.  
+
+5. **Error Handling:**  
+   - If backend fails, show a warning notification and leave original prompt untouched.  
+
+## 4. Non-Goals
+- Direct integration into Cursor’s internal chat box (future enhancement).  
+- Offline/local LLM support (future roadmap).  
+
+## 5. Technical Requirements
+- Language: TypeScript or JavaScript (Node.js based).  
+- Uses `node-fetch` for API requests.  
+- Compatible with VS Code API (`^1.70.0`).  
+- Packaged with `@vscode/vsce` for `.vsix` distribution.  
+- Works in Cursor Desktop (via “Install from VSIX”).  
+
+## 6. User Workflow
+1. User selects text (messy prompt) inside Cursor.  
+2. Runs **“Enhance Prompt”** command from Command Palette.  
+3. Extension calls backend API.  
+4. Enhanced prompt returned.  
+5. User chooses “Replace” or “New Doc”.  
+
+---
+
+# 📘 Repository README.md
+
+# Cursor Prompt Enhancer
+
+A VS Code extension (also works in Cursor Desktop) that improves natural language prompts before sending them to AI.  
+It makes prompts clearer, adds missing context, and structures them for higher-quality AI output.
+
+---
+
+## ✨ Features
+- Enhance selected text or type in a new prompt.
+- Command: `Cursor Enhancer: Enhance Prompt`.
+- Works inside **Cursor Desktop** and **VS Code**.
+- Configurable backend API endpoint.
+
+---
+
+## 🚀 Quick Start
+
+### 1. Run the Backend
+Clone the backend repo (or copy the provided `server.js`):
+
+```bash
+git clone https://github.com/yourname/cursor-enhancer-backend.git
+cd cursor-enhancer-backend
+npm install
+OPENAI_API_KEY=sk-xxxx node server.js
+```
+
+This starts the API on `http://localhost:3000/api/enhance`.
+
+### 2. Install the Extension
+Clone this repo:
+
+```bash
+git clone https://github.com/yourname/cursor-enhancer.git
+cd cursor-enhancer
+npm install
+npm install -g @vscode/vsce
+vsce package
+```
+
+This creates a `.vsix` file.
+
+Install into **Cursor**:
+
+```bash
+cursor --install-extension cursor-enhancer-0.0.1.vsix
+```
+
+Or inside Cursor:  
+- Open Command Palette → “Extensions: Install from VSIX” → select the `.vsix` file.
+
+### 3. Usage
+- Highlight text → run `Cursor Enhancer: Enhance Prompt`.  
+- Choose to **Replace Selection** or **Open New Doc**.  
+
+---
+
+## ⚙️ Configuration
+The extension calls `http://localhost:3000/api/enhance` by default.  
+You can change this in `extension.js` → `API_URL`.  
+
+---
+
+## 📜 License
+This project is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 (CC BY-NC-ND 4.0)** license.  
+
+You are free to:
+- Use it **personally**.  
+- Share it with attribution.  
+
+But you **cannot**:
+- Use it for **commercial purposes**.  
+- Sell, resell, or repackage it.  
+- Create derivative products for profit.  
+
+Full license: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+---
+
+## 🤝 Contributing
+PRs are welcome for bug fixes and improvements, but all contributions remain under the same license.
+
+---
+
+## 🛠️ Roadmap
+- Add inline enhancement directly inside Cursor’s chat input.  
+- Add local/offline LLM support.  
+- Add customizable enhancement styles.  
+
+---
+
+## 🧑‍💻 Maintainers
+- Your Name (@yourgithub)
